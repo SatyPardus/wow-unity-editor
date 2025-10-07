@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Test.uss?fileID=7433441132597879392&amp;guid=fe34f61c83be8c34383aa3d3bc3cfb35&amp;type=3#Test" />
+    <ui:VisualElement name="VisualElement" class="background" style="flex-grow: 1;">
+        <ui:VisualElement name="Menu" class="sidepanel" />
+        <ui:VisualElement name="Content" class="content">
+            <ui:MultiColumnListView show-foldout-header="false" show-border="false">
+                <ui:SortColumnDescriptions>
+                    <ui:SortColumnDescription column-name="Test" column-index="0" />
+                    <ui:SortColumnDescription column-name="Test2" column-index="1" />
+                </ui:SortColumnDescriptions>
+                <ui:Columns primary-column-name="Test" reorderable="true">
+                    <ui:Column name="Test" title="Test" width="100px" />
+                    <ui:Column name="Test2" title="Test2" width="100px" />
+                </ui:Columns>
+            </ui:MultiColumnListView>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
